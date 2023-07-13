@@ -1,0 +1,170 @@
+tree
+version=v3
+num_class=1
+num_tree_per_iteration=1
+label_index=0
+max_feature_idx=3
+objective=regression
+feature_names=starting_cases ending_cases pending_cases waiting_time_last
+feature_infos=none [-0.82869793120278978:5.7198392659791581] [-1.7716617438951097:2.6060223205307267] [-0.36541574650186742:10.561391822460898]
+tree_sizes=718 728
+
+Tree=0
+num_leaves=7
+num_cat=0
+split_feature=1 1 1 2 2 1
+split_gain=2.00435e+11 1.0617e+11 1.80777e+11 2.73181e+11 1.59491e+11 3.6048e+09
+threshold=1.217719942916569 -0.419414356378918 1.0000000180025095e-35 1.0000000180025095e-35 1.0000000180025095e-35 2.0362870925643128
+decision_type=2 2 2 2 2 2
+left_child=1 -1 4 -4 -3 -2
+right_child=5 2 3 -5 -6 -7
+leaf_value=166726.72710623825 161845.92065284651 167142.62086606267 163464.92073172273 170317.87504293886 162976.13500283455 162754.8207477562
+leaf_weight=173 24 30 26 33 98 20
+leaf_count=173 24 30 26 33 98 20
+internal_value=165445 165834 165008 167298 163953 162259
+internal_weight=0 360 187 59 128 44
+internal_count=404 360 187 59 128 44
+is_linear=0
+shrinkage=1
+
+
+Tree=1
+num_leaves=7
+num_cat=0
+split_feature=1 1 1 2 2 1
+split_gain=1.80892e+11 9.58181e+10 1.63151e+11 2.46546e+11 1.43941e+11 3.25333e+09
+threshold=1.217719942916569 -0.419414356378918 1.0000000180025095e-35 1.0000000180025095e-35 1.0000000180025095e-35 2.0362870925643128
+decision_type=2 2 2 2 2 2
+left_child=1 -1 4 -4 -3 -2
+right_child=5 2 3 -5 -6 -7
+leaf_value=1217.9697667821983 -3418.7960611979165 1613.06880859375 -1880.7460899939904 4629.5604166666662 -2345.0925811144771 -2555.3413879394534
+leaf_weight=173 24 30 26 33 98 20
+leaf_count=173 24 30 26 33 98 20
+internal_value=0 369.883 -414.711 1760.61 -1417.4 -3026.32
+internal_weight=0 360 187 59 128 44
+internal_count=404 360 187 59 128 44
+is_linear=0
+shrinkage=0.05
+
+
+end of trees
+
+feature_importances:
+ending_cases=8
+pending_cases=4
+
+parameters:
+[boosting: gbdt]
+[objective: regression]
+[metric: huber]
+[tree_learner: serial]
+[device_type: cpu]
+[data: ]
+[valid: ]
+[num_iterations: 250]
+[learning_rate: 0.05]
+[num_leaves: 31]
+[num_threads: 0]
+[deterministic: 0]
+[force_col_wise: 0]
+[force_row_wise: 0]
+[histogram_pool_size: -1]
+[max_depth: 6]
+[min_data_in_leaf: 20]
+[min_sum_hessian_in_leaf: 0.001]
+[bagging_fraction: 0.8]
+[pos_bagging_fraction: 1]
+[neg_bagging_fraction: 1]
+[bagging_freq: 0]
+[bagging_seed: 3]
+[feature_fraction: 0.5]
+[feature_fraction_bynode: 1]
+[feature_fraction_seed: 2]
+[extra_trees: 0]
+[extra_seed: 6]
+[early_stopping_round: 100]
+[first_metric_only: 0]
+[max_delta_step: 0]
+[lambda_l1: 0]
+[lambda_l2: 0]
+[linear_lambda: 0]
+[min_gain_to_split: 0]
+[drop_rate: 0.1]
+[max_drop: 50]
+[skip_drop: 0.5]
+[xgboost_dart_mode: 0]
+[uniform_drop: 0]
+[drop_seed: 4]
+[top_rate: 0.2]
+[other_rate: 0.1]
+[min_data_per_group: 100]
+[max_cat_threshold: 32]
+[cat_l2: 10]
+[cat_smooth: 10]
+[max_cat_to_onehot: 4]
+[top_k: 20]
+[monotone_constraints: ]
+[monotone_constraints_method: basic]
+[monotone_penalty: 0]
+[feature_contri: ]
+[forcedsplits_filename: ]
+[refit_decay_rate: 0.9]
+[cegb_tradeoff: 1]
+[cegb_penalty_split: 0]
+[cegb_penalty_feature_lazy: ]
+[cegb_penalty_feature_coupled: ]
+[path_smooth: 0]
+[interaction_constraints: ]
+[verbosity: 1]
+[saved_feature_importance_type: 0]
+[linear_tree: 0]
+[max_bin: 255]
+[max_bin_by_feature: ]
+[min_data_in_bin: 3]
+[bin_construct_sample_cnt: 200000]
+[data_random_seed: 1]
+[is_enable_sparse: 1]
+[enable_bundle: 1]
+[use_missing: 1]
+[zero_as_missing: 0]
+[feature_pre_filter: 1]
+[pre_partition: 0]
+[two_round: 0]
+[header: 0]
+[label_column: ]
+[weight_column: ]
+[group_column: ]
+[ignore_column: ]
+[categorical_feature: ]
+[forcedbins_filename: ]
+[precise_float_parser: 0]
+[objective_seed: 5]
+[num_class: 1]
+[is_unbalance: 0]
+[scale_pos_weight: 1]
+[sigmoid: 1]
+[boost_from_average: 1]
+[reg_sqrt: 0]
+[alpha: 0.9]
+[fair_c: 1]
+[poisson_max_delta_step: 0.7]
+[tweedie_variance_power: 1.5]
+[lambdarank_truncation_level: 30]
+[lambdarank_norm: 1]
+[label_gain: ]
+[eval_at: ]
+[multi_error_top_k: 1]
+[auc_mu_weights: ]
+[num_machines: 1]
+[local_listen_port: 12400]
+[time_out: 120]
+[machine_list_filename: ]
+[machines: ]
+[gpu_platform_id: -1]
+[gpu_device_id: -1]
+[gpu_use_dp: 0]
+[num_gpu: 1]
+
+end of parameters
+
+pandas_categorical:[]
